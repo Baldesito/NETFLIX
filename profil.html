@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #141414;
+        color: white;
+      }
+      .btn-custom {
+        background-color: #e50914;
+        color: white;
+      }
+      .btn-outline-custom {
+        border: 1px solid #e50914;
+        color: #e50914;
+      }
+      .profile-img {
+        background-color: #00d65f;
+        width: 80px;
+        height: 80px;
+      }
+      .checkbox-custom {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .checkbox-custom input[type="checkbox"] {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Edit Profile</h2>
+      <hr />
+
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Profile Image and Name -->
+          <div class="d-flex align-items-center mb-3">
+            <div
+              class="profile-img rounded mr-3 d-flex justify-content-center align-items-center"
+            >
+              <span class="text-dark font-weight-bold">S</span>
+            </div>
+            <input
+              type="text"
+              class="form-control bg-dark text-white"
+              value="Strive Student"
+              readonly
+            />
+          </div>
+
+          <!-- Language Selection -->
+          <div class="form-group">
+            <label for="language">Language:</label>
+            <select id="language" class="form-control bg-dark text-white">
+              <option selected>English</option>
+              <option>Italian</option>
+              <option>Spanish</option>
+              <option>French</option>
+            </select>
+          </div>
+
+          <hr />
+
+          <!-- Maturity Settings -->
+          <div class="form-group">
+            <label>Maturity Settings:</label>
+            <button class="btn btn-dark btn-sm d-block w-100 mb-2">
+              ALL MATURITY RATINGS
+            </button>
+            <small class="text-muted"
+              >Show titles of <strong>all maturity ratings</strong> for this
+              profile.</small
+            >
+          </div>
+          <button class="btn btn-outline-light btn-sm">EDIT</button>
+
+          <hr />
+
+          <!-- Autoplay Controls -->
+          <div class="form-group">
+            <label>Autoplay controls</label>
+            <div class="checkbox-custom">
+              <input type="checkbox" checked />
+              <label>Autoplay next episode in a series on all devices.</label>
+            </div>
+            <div class="checkbox-custom">
+              <input type="checkbox" checked />
+              <label>Autoplay previews while browsing on all devices.</label>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-start">
+            <button class="btn btn-custom mr-2">SAVE</button>
+            <button class="btn btn-outline-custom mr-2">CANCEL</button>
+            <button class="btn btn-outline-custom">DELETE PROFILE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

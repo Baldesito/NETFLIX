@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Account Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <section class="container bg-dark">
+    <header class="text-white text-center bg-dark ">
+      <nav class="navbar navbar-expand-lg navbar-expand-md  navbar-expand-sm float-sm overflow-hidden nabg-body-dark">
+        <div class="container-fluid">
+          <img src="./assets/1.png" width="100px"  class="navbar-brand" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-secondary"
+                  aria-current="page"
+                  id="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#saldi">TV Shows</a>
+              </li>
+              <li class="">
+                <a
+                  class="nav-link text-secondary"
+                  href="#welcome"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Movies
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary"
+                  > Recently Added
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" 
+                  >My List
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+
+              <button
+                class="btn btn-outline-success bg-dark  border-dark text-white"
+                type="submit"
+              >
+              
+              <i class="bi bi-search"></i>
+              </button>
+              <button
+                class="btn btn-outline-success bg-dark  border-dark text-white"
+                type="submit"
+              >
+              
+              <a class="nav-link">KIDS</a>
+              </button>
+            
+             
+            
+              <button
+                class="btn btn-outline-success bg-dark  border-dark text-white"
+                type="submit"
+              >
+              
+              <i class="bi bi-bell-fill">  </i>
+               
+              </button>
+              <img src="./assets/avatar.png" class="rounded float-start" width="40" height="me-auto">
+              <div class="dropdown">
+  <a class="btn btn-dark dropdown-toggle" href="./profilo.html" role="show" data-bs-toggle="dropdown" aria-expanded="true">
+  </a>
+
+  <ul class="dropdown-menu   ">
+    <li><a class="dropdown-item" href="">Mio profilo</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+  
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container mt-5">
+      <h2>Account</h2>
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6">
+          <h5>MEMBERSHIP & BILLING</h5>
+          <button class="btn btn-secondary btn-sm mb-3">
+            Cancel Membership
+          </button>
+          <p>Email: student@strive.school</p>
+          <p>Password: ********</p>
+          <p>Phone: 321 044 1279</p>
+          <p><i class="fab fa-paypal"></i> PayPal: admin@strive.school</p>
+          <a href="#">Update payment info</a> |
+          <a href="#">Billing details</a>
+          <br />
+          <a href="#">Redeem gift card or promo code</a> |
+          <a href="#">Where to buy gift cards</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6">
+          <h5>PLAN DETAILS</h5>
+          <p>Premium <span class="badge badge-secondary">ULTRA HD</span></p>
+          <a href="#">Change plan</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6">
+          <h5>SETTINGS</h5>
+          <a href="#">Parental controls</a><br />
+          <a href="#">Test participation</a><br />
+          <a href="#">Manage download devices</a><br />
+          <a href="#">Activate a device</a><br />
+          <a href="#">Recent device streaming activity</a><br />
+          <a href="#">Sign out of all devices</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6">
+          <h5>MY PROFILE</h5>
+          <p>
+            <img src="https://via.placeholder.com/50" alt="Profile Image" />
+            Strive Student
+          </p>
+          <a href="#">Language</a> | <a href="#">Playback settings</a> |
+          <a href="#">Subtitle appearance</a> |
+          <a href="#">Viewing activity</a> | <a href="#">Ratings</a><br />
+          <a href="#">Manage profiles</a> |
+          <a href="#">Add profile email</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
